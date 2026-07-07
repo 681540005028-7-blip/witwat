@@ -13,7 +13,7 @@
         }
 
         body {
-            background-color: #f4f7f6;
+            background-color: #f4f7f9; /* ปรับพื้นหลังให้อมฟ้าจางๆ */
             color: #333;
             line-height: 1.6;
             padding: 20px;
@@ -31,7 +31,7 @@
         /* ส่วนหัว / รูปโปรไฟล์ */
         .header-section {
             text-align: center;
-            border-bottom: 2px solid #1B365D;
+            border-bottom: 2px solid #f0f4f8;
             padding-bottom: 30px;
             margin-bottom: 30px;
         }
@@ -41,14 +41,14 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #1B365D;
+            border: 4px solid #1B365D; /* เปลี่ยนเป็นสีน้ำเงินเข้ม */
             margin-bottom: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         .name {
             font-size: 2rem;
-            color: #2c3e50;
+            color: #1B365D; /* เปลี่ยนเป็นสีน้ำเงินเข้ม */
             font-weight: 700;
         }
 
@@ -61,9 +61,9 @@
         /* ส่วนเนื้อหา */
         .section-title {
             font-size: 1.4rem;
-            color: #B3E5FC;
+            color: #1B365D; /* เปลี่ยนเป็นสีน้ำเงินเข้ม */
             margin-bottom: 15px;
-            border-left: 4px solid #4CAF50;
+            border-left: 4px solid #1B365D; /* เปลี่ยนเส้นขอบเป็นสีน้ำเงินเข้ม */
             padding-left: 10px;
         }
 
@@ -76,13 +76,13 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
-            background: #B3E5FC;
+            background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
         }
 
         .info-item strong {
-            color: #2c3e50;
+            color: #1B365D; /* เปลี่ยนหัวข้อข้อมูลเป็นสีน้ำเงินเข้ม */
         }
 
         /* ทักษะความสามารถ (Tags) */
@@ -94,8 +94,8 @@
         }
 
         .skill-tag {
-            background: #e8f5e9;
-            color: #2e7d32;
+            background: #E0F7FA; /* ใช้สีฟ้าพาสเทลนุ่มนวลเป็นพื้นหลัง */
+            color: #1B365D; /* ตัวอักษรสีน้ำเงินเข้มตัดกันชัดเจน */
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -107,12 +107,12 @@
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #f0f0f0;
+            border-top: 1px solid #f0f4f8;
         }
 
         .contact-btn {
             display: inline-block;
-            background: #4CAF50;
+            background: #1B365D; /* เปลี่ยนปุ่มเป็นสีน้ำเงินเข้ม */
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -122,39 +122,34 @@
         }
 
         .contact-btn:hover {
-            background: #45a049;
+            background: #4169E1; /* เวลาชี้เมาส์ (Hover) จะเปลี่ยนเป็นสีน้ำเงินรอยัลบลูสว่าง */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- ส่วนหัว: รูปและชื่อ -->
         <div class="header-section">
-            <!-- เปลี่ยน URL รูปภาพใน src เป็นรูปของคุณได้เลย -->
-            <img src="https://i.ibb.co/4ZT5K36x/IMG-20260707-154439.jpg" alt="รูปโปรไฟล์ของคุณ" class="profile-img">
-            <h1 class="name">วิทวัส จันทะมนตรี</h1>
+            <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์ของคุณ" class="profile-img">
+            <h1 class="name">สมชาย ใจดี</h1>
             <p class="job-title">Web Developer & Designer</p>
         </div>
 
-        <!-- ส่วนประวัติโดยย่อ -->
         <div class="bio-section">
             <h2 class="section-title">เกี่ยวกับฉัน (About Me)</h2>
             <p>สวัสดีครับ ฉันเป็นนักพัฒนาเว็บไซต์ที่หลงใหลในการสร้างสรรค์ประสบการณ์ดิจิทัลที่ใช้งานง่ายและสวยงาม มีประสบการณ์ในการออกแบบและพัฒนาเว็บไซต์รวมถึงแอปพลิเคชัน ชอบเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ</p>
         </div>
 
-        <!-- ส่วนข้อมูลส่วนตัว -->
         <div class="info-section">
             <h2 class="section-title">ข้อมูลส่วนตัว (Personal Info)</h2>
             <div class="info-grid">
-                <div class="info-item"><strong>อายุ:</strong> 18 ปี</div>
-                <div class="info-item"><strong>การศึกษา:</strong> ปริญญาตรี วิศวกรรมคอมพิวเตอร์</div>
-                <div class="info-item"><strong>ที่อยู่:</strong> กาฬสินธุ์, ประเทศไทย</div>
-                <div class="info-item"><strong>อีเมล:</strong> 691540005001-2@ksu.ac.th</div>
+                <div class="info-item"><strong>อายุ:</strong> 25 ปี</div>
+                <div class="info-item"><strong>การศึกษา:</strong> ปริญญาตรี วิทยาการคอมพิวเตอร์</div>
+                <div class="info-item"><strong>ที่อยู่:</strong> กรุงเทพมหานคร, ประเทศไทย</div>
+                <div class="info-item"><strong>อีเมล:</strong> somchai.j@example.com</div>
             </div>
         </div>
 
-        <!-- ส่วนทักษะความสามารถ -->
         <div class="skills-section">
             <h2 class="section-title">ทักษะความสามารถ (Skills)</h2>
             <div class="skills-container">
@@ -166,7 +161,6 @@
             </div>
         </div>
 
-        <!-- ส่วนท้าย/ติดต่อ -->
         <div class="contact-footer">
             <a href="mailto:somchai.j@example.com" class="contact-btn">ติดต่องาน / พูดคุย</a>
         </div>
